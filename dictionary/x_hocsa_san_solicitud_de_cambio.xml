@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Solicitud de Cambio" max_length="40" name="x_hocsa_san_solicitud_de_cambio" type="collection">
+        <element label="Comentarios" max_length="40" name="u_slx_comentarios" type="string"/>
+        <element label="Correlativo" max_length="40" name="u_slx_correlativo" type="integer"/>
+        <element choice="1" label="División" max_length="40" name="u_slx_division" reference="core_company" type="reference">
+            <choice/>
+        </element>
+        <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="En preparación" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="En preparación" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="En revisión interna" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="En revisión interna" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Emitida Oficialmente" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Emitida Oficialmente" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Preparando nueva Revisión" language="es" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="Preparando nueva Revisión" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="Aprobada por Codelco" language="es" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Aprobada por Codelco" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Cancelada por Codelco" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Cancelada por Codelco" language="es" sequence="600" value="6"/>
+            </choice>
+        </element>
+        <element label="Fecha Estado" max_length="40" name="u_slx_fecha_estado" type="glide_date"/>
+        <element label="HCO" max_length="40" name="u_slx_hco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element choice="1" label="Motivo" max_length="40" name="u_slx_motivo" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Plazo" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Plazo" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Costos" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Costos" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Alcance" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Alcance" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element label="Número de Registro SAP" max_length="40" name="u_slx_numero_reg_sap" type="integer"/>
+        <element label="Número Sales Force" max_length="40" name="u_slx_numero_sales_force" type="integer"/>
+        <element label="Número Siebel" max_length="40" name="u_slx_numero_siebel" type="integer"/>
+        <element label="PCO" max_length="40" name="u_slx_pco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element label="Preparado por" max_length="40" name="u_slx_preparado" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element label="Requisitor" max_length="40" name="u_slx_requisitor" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element choice="1" label="Revisión " max_length="40" name="u_slx_revision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rev. 1" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Rev. 1" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Rev. 2" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Rev. 2" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Rev. 3" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Rev. 3" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element label="SC" max_length="40" name="u_slx_sc" type="string"/>
+        <element label="Valor Venta" max_length="40" name="u_slx_valor_venta" type="integer"/>
+        <element label="Venta Final Proyecto" max_length="40" name="u_slx_venta_final_proyecto" type="integer"/>
+    </element>
+</database>

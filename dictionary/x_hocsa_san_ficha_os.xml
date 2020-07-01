@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Ficha OS" max_length="40" name="x_hocsa_san_ficha_os" type="collection">
+        <element choice="1" label="Área" max_length="40" name="u_slx_area" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DCS INSTR" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="DCS INSTR" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="CTLAPPS" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="CTLAPPS" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="INFOAPPS" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="INFOAPPS" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="SERV" language="es" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="SERV" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="FEL CORE" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="FEL CORE" language="es" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="OTRA" language="es" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="OTRA" sequence="600" value="6"/>
+            </choice>
+        </element>
+        <element label="Contrato" max_length="40" name="u_slx_contrato" type="integer"/>
+        <element choice="1" label="División" max_length="40" name="u_slx_division" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DCH DET" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="DCH DET" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="DCA DSA" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="DCA DSA" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="DCC DMH" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="DCC DMH" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="DRT DGM" language="es" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="DRT DGM" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="CCM CSC" language="es" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="CCM CSC" sequence="500" value="5"/>
+            </choice>
+        </element>
+        <element label="Duración Meses" max_length="40" name="u_slx_duracion_meses" type="integer"/>
+        <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
+            <choice/>
+        </element>
+        <element label="Fecha Estado" max_length="40" name="u_slx_fecha_estado" type="glide_date"/>
+        <element label="Mes de Booking" max_length="40" name="u_slx_mes_booking" type="integer"/>
+        <element label="Monto CLP" max_length="40" name="u_slx_monto_clp" type="integer"/>
+        <element label="Nombre" max_length="40" name="u_slx_nombre" type="string"/>
+        <element label="Nombre OS" max_length="40" name="u_slx_nombre_os" type="string"/>
+        <element label="Número OS" max_length="40" name="u_slx_numero_os" type="integer"/>
+        <element label="Número Sales Force" max_length="40" name="u_slx_numero_sales_force" type="integer"/>
+        <element label="Número Siebel" max_length="40" name="u_slx_numero_siebel" type="integer"/>
+        <element label="Proyecto Microsiga / HCO" max_length="40" name="u_slx_proyecto_hco" type="integer"/>
+        <element label="Requisitor OS" max_length="40" name="u_slx_requisitor_os" type="string"/>
+    </element>
+</database>

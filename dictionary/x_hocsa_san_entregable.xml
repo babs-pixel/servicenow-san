@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Entregable" max_length="40" name="x_hocsa_san_entregable" type="collection">
+        <element label="Año de Acta de Recepción de Servicios" max_length="40" name="u_slx_ano_ars" type="integer"/>
+        <element label="Comentarios del estado NEN" max_length="200" name="u_slx_comentarios_estado_nen" type="string"/>
+        <element choice="1" label="División" max_length="40" name="u_slx_division" type="choice">
+            <choice/>
+        </element>
+        <element label="E-mail destinatario NEN" max_length="100" name="u_slx_email_destinatario" type="string"/>
+        <element label="Entregable Final" max_length="40" name="u_slx_entregable_final" type="boolean"/>
+        <element choice="1" label="Estado del Acta de Recepción de Servicios" max_length="40" name="u_slx_estado_acta_recepcion_servicios" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Solicitud de emisión" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Solicitud de emisión" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Enviada a cliente" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Enviada a cliente" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Recibida por Kairos" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Recibida por Kairos" language="es" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Estado NEN" max_length="40" name="u_slx_estado_nen" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Estado SC" max_length="40" name="u_slx_estado_sc" type="choice">
+            <choice/>
+        </element>
+        <element label="Fecha de Aceptación de Acta de Recepción de servicios" max_length="40" name="u_slx_fecha_aceptacion_ars" type="glide_date"/>
+        <element label="Fecha de cambio estado NEN" max_length="40" name="u_slx_fecha_cambio_estado_nen" type="glide_date"/>
+        <element label="Fecha devolución a Jefe de Proyecto" max_length="40" name="u_slx_fecha_devolucion_jefe_proyecto" type="glide_date"/>
+        <element label="Fecha entrega a expeditor" max_length="40" name="u_slx_fecha_entrega_expeditor" type="glide_date"/>
+        <element label="Fecha entrega por mano a cliente" max_length="40" name="u_slx_fecha_entrega_mano_cliente" type="glide_date"/>
+        <element label="Fecha firma del Acta por planta" max_length="40" name="u_slx_fecha_firma_acta_planta" type="glide_date"/>
+        <element label="Fecha Inicio" max_length="40" name="u_slx_fecha_inicio" type="glide_date"/>
+        <element label="Fecha de Recepción de Encuesta" max_length="40" name="u_slx_fecha_recepcion_encuesta" type="glide_date"/>
+        <element label="Fecha término" max_length="40" name="u_slx_fecha_termino" type="glide_date"/>
+        <element label="HCO" max_length="32" name="u_slx_hco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element label="Jefe de Proyecto" max_length="40" name="u_slx_jefe_proyecto" type="string"/>
+        <element label="Master publicación" max_length="100" name="u_slx_master_publicacion" type="string"/>
+        <element label="Mes de Aceptación de Acta de Recepción de servicios" max_length="40" name="u_slx_mes_aceptacion_ars" type="integer"/>
+        <element label="Nombre" max_length="100" name="u_slx_nombre" type="string"/>
+        <element label="Nombre destinatario NEN" max_length="100" name="u_slx_nombre_destinatario" type="string"/>
+        <element label="Nombre Solic. emisión" max_length="100" name="u_slx_nombre_solic_emision" type="string"/>
+        <element label="N° Acta Recepción de Servicios" max_length="40" name="u_slx_nro_acta_recepcion_servicios" type="string"/>
+        <element label="Número NEN" max_length="40" name="u_slx_numero_nen" type="string"/>
+        <element label="Número SC" max_length="40" name="u_slx_numero_sc" type="integer"/>
+        <element label="OS" max_length="32" name="u_slx_os" reference="x_hocsa_san_ficha_os" type="reference"/>
+        <element label="PCO" max_length="40" name="u_slx_pco" type="string"/>
+        <element label="PM" max_length="40" name="u_slx_pm" type="string"/>
+        <element choice="1" label="Tipo" max_length="40" name="u_slx_tipo" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Documentos" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Documentos" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Planos" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Planos" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Actas de Recepción de Servicios" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Actas de Recepción de Servicios" language="es" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Versión del entregable" max_length="40" name="u_slx_version_entregable" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_slx_pco"/>
+        </index>
+        <index name="index2">
+            <element name="u_slx_fecha_termino"/>
+        </index>
+        <index name="index3">
+            <element name="u_slx_fecha_inicio"/>
+        </index>
+        <index name="index4">
+            <element name="u_slx_hco"/>
+        </index>
+        <index name="index5">
+            <element name="u_slx_numero_sc"/>
+        </index>
+        <index name="index6">
+            <element name="u_slx_os"/>
+        </index>
+    </element>
+</database>

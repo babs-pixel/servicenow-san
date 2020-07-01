@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Encuesta" max_length="40" name="x_hocsa_san_encuesta" type="collection">
+        <element label="Año" max_length="40" name="u_slx_ano" type="integer"/>
+        <element choice="1" label="Área" max_length="40" name="u_slx_area" type="choice">
+            <choice/>
+        </element>
+        <element label="Cliente" max_length="100" name="u_slx_cliente" type="string"/>
+        <element label="Cliente que firma la encuesta" max_length="100" name="u_slx_cliente_firma_encuesta" type="string"/>
+        <element label="Comentarios de Cliente" max_length="200" name="u_slx_comentarios_cliente" type="string"/>
+        <element label="Correo Cliente" max_length="100" name="u_slx_correo_cliente" type="string"/>
+        <element label="Días transcurridos de recepción acta/encuesta" max_length="40" name="u_slx_dias_transcurridos_recepcion_acta_encuesta" type="integer"/>
+        <element choice="1" label="División/Sitio" max_length="40" name="u_slx_division_sitio" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Encuesta Firmada" max_length="40" name="u_slx_encuesta_firmada" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sí" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Sí" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="No" language="es" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <element choice="1" label="Encuesta Respondida" max_length="40" name="u_slx_encuesta_respondida" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sí" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Sí" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="No" language="es" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <element label="Escala" max_length="40" name="u_slx_escala" type="integer"/>
+        <element label="Fecha de Aceptación del Servicio" max_length="40" name="u_slx_fecha_aceptacion_servicio" type="glide_date"/>
+        <element label="Fecha de Cierre" max_length="40" name="u_slx_fecha_cierre" type="glide_date"/>
+        <element label="Fecha Envío de Respuesta a Cliente" max_length="40" name="u_slx_fecha_envio_respuesta_cliente" type="glide_date"/>
+        <element label="Fecha firma del acta por planta" max_length="32" name="u_slx_fecha_firma_acta_planta" type="glide_date"/>
+        <element label="Fecha de Recepción de Encuesta" max_length="40" name="u_slx_fecha_recepcion_encuesta" type="glide_date"/>
+        <element label="HCO" max_length="32" name="u_slx_hco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element choice="1" label="Indicador de Percepción de Calidad y Competencias" max_length="40" name="u_slx_indicador_percepcion_calidad_competencia" type="choice">
+            <choice/>
+        </element>
+        <element label="Indice de Satisfacción de Cliente (ISC)" max_length="40" name="u_slx_isc" type="integer"/>
+        <element label="Jefe de Proyecto" max_length="32" name="u_slx_jefe_proyecto" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element label="Mes del Acta" max_length="40" name="u_slx_mes_acta" type="integer"/>
+        <element choice="1" label="Meta" max_length="40" name="u_slx_meta" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="4" sequence="100" value="4"/>
+                <element inactive_on_update="false" label="4" language="es" sequence="100" value="4"/>
+                <element inactive_on_update="false" label="5" language="es" sequence="200" value="5"/>
+                <element inactive_on_update="false" label="5" sequence="200" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="300" value="6"/>
+                <element inactive_on_update="false" label="6" language="es" sequence="300" value="6"/>
+                <element inactive_on_update="false" label="7" language="es" sequence="400" value="7"/>
+                <element inactive_on_update="false" label="7" sequence="400" value="7"/>
+                <element inactive_on_update="false" label="8" sequence="500" value="8"/>
+                <element inactive_on_update="false" label="8" language="es" sequence="500" value="8"/>
+                <element inactive_on_update="false" label="9" sequence="900" value="9"/>
+                <element inactive_on_update="false" label="9" language="es" sequence="900" value="9"/>
+                <element inactive_on_update="false" label="10" language="es" sequence="1000" value="10"/>
+                <element inactive_on_update="false" label="10" sequence="1000" value="10"/>
+            </choice>
+        </element>
+        <element label="Nombre del proyecto" max_length="40" name="u_slx_nombre_proyecto" type="string"/>
+        <element label="Net Promoter Score (NPS)" max_length="40" name="u_slx_nps" type="integer"/>
+        <element label="N° Acta de Recepción de Servicios" max_length="40" name="u_slx_nro_acta_recepcion_servicios" type="integer"/>
+        <element label="Número AC" max_length="40" name="u_slx_numero_ac" type="integer"/>
+        <element label="N° OS" max_length="40" name="u_slx_numero_os" type="integer"/>
+        <element label="Observaciones de AC" max_length="200" name="u_slx_observaciones_ac" type="string"/>
+        <element label="Controlador de Proyectos (PCO)" max_length="32" name="u_slx_pco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element label="Planes de Acción" max_length="40" name="u_slx_planes_accion" type="string"/>
+        <element label="Promedio" max_length="40" name="u_slx_promedio" type="integer"/>
+        <element choice="1" label="Requiere AC" max_length="40" name="u_slx_requiere_ac" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sí" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Sí" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="No" language="es" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <element label="Rol/Cargo Cliente" max_length="100" name="u_slx_rol_cargo_cliente" type="string"/>
+        <element choice="1" label="Sub área" max_length="40" name="u_slx_sub_area" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Aplicaciones de Información" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Aplicaciones de Información" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Aplicaciones de Simulación" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Aplicaciones de Simulación" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Capacitación" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Capacitación" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="ControlApps" language="es" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="ControlApps" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="Infraestructura" language="es" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Infraestructura" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Ingeniería y Proyectos Infraestructura" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Ingeniería y Proyectos Infraestructura" language="es" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Instrumentación en Terreno" language="es" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Instrumentación en Terreno" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Proyectos especiales" language="es" sequence="800" value="8"/>
+                <element inactive_on_update="false" label="Proyectos especiales" sequence="800" value="8"/>
+                <element inactive_on_update="false" label="Servicios" sequence="900" value="9"/>
+                <element inactive_on_update="false" label="Servicios" language="es" sequence="900" value="9"/>
+                <element inactive_on_update="false" label="Todas (GDS)" sequence="1000" value="10"/>
+                <element inactive_on_update="false" label="Todas (GDS)" language="es" sequence="1000" value="10"/>
+            </choice>
+        </element>
+        <element choice="1" label="Tipo" max_length="40" name="u_slx_tipo" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Encuesta proyectos" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Encuesta proyectos" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Encuesta soporte" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Encuesta soporte" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Encuesta anual" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Encuesta anual" language="es" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_slx_fecha_firma_acta_planta"/>
+        </index>
+        <index name="index2">
+            <element name="u_slx_jefe_proyecto"/>
+        </index>
+        <index name="index3">
+            <element name="u_slx_pco"/>
+        </index>
+        <index name="index4">
+            <element name="u_slx_hco"/>
+        </index>
+        <index name="index5">
+            <element name="u_slx_nombre_proyecto"/>
+        </index>
+        <index name="index6">
+            <element name="u_slx_ano"/>
+        </index>
+    </element>
+</database>

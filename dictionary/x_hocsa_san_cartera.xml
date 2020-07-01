@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Cartera" max_length="40" name="x_hocsa_san_cartera" type="collection">
+        <element label="Cliente" max_length="40" name="u_slx_cliente" reference="core_company" type="reference"/>
+        <element display="true" label="Descripción" max_length="200" name="u_slx_descripcion" type="string"/>
+        <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Abierta" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Abierta" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Cerrada" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Cerrada" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <element label="Fecha cambio de estado" max_length="40" name="u_slx_fecha_cambio_estado" type="glide_date"/>
+        <element label="Monto Presupuestado" max_length="40" name="u_slx_monto_presupuestado" type="integer"/>
+    </element>
+</database>

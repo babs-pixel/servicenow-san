@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Iniciativa" max_length="40" name="x_hocsa_san_iniciativa" type="collection">
+        <element label="Año" max_length="40" name="u_slx_ano" type="integer"/>
+        <element label="Cartera" max_length="32" name="u_slx_cartera" reference="x_hocsa_san_cartera" type="reference"/>
+        <element label="Descripción" max_length="200" name="u_slx_descripcion" type="string"/>
+        <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pendiente" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Pendiente" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="En curso" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="En curso" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Terminada" language="es" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Terminada" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Estado ficha" max_length="40" name="u_slx_estado_ficha" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pendiente" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Pendiente" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Firmada" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Firmada" language="es" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <element label="Fecha ficha" max_length="40" name="u_slx_fecha" type="glide_date"/>
+        <element label="Iniciativa del año" max_length="40" name="u_slx_iniciativa_ano" type="boolean"/>
+        <element label="Nombre" max_length="40" name="u_slx_nombre" type="string"/>
+        <element label="Nombre ficha" max_length="40" name="u_slx_nombre_ficha" type="string"/>
+        <element label="Monto Presupuestado" max_length="40" name="u_slx_presupuestado" type="integer"/>
+        <element choice="1" label="Tipo" max_length="40" name="u_slx_tipo" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Proyecto" language="es" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Proyecto" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Soporte" language="es" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Soporte" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_slx_cartera"/>
+        </index>
+    </element>
+</database>
