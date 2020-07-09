@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_hocsa_san_encuesta" label="Encuesta de soporte" max_length="40" name="x_hocsa_san_encuesta_de_soporte" type="collection">
+        <element choice="1" label="Área" max_length="40" name="u_slx_area" type="choice">
+            <choice/>
+        </element>
+        <element label="Cliente" max_length="40" name="u_slx_cliente" type="string"/>
+        <element label="Fecha firma de encuesta" max_length="40" name="u_slx_fecha_firma_encuesta" type="glide_date"/>
+        <element label="Jefe de Proyecto" max_length="40" name="u_slx_jefe_proyecto" type="string"/>
+        <element label="Nombre del Proyecto (HCO)" max_length="100" name="u_slx_nombre_hco" type="string"/>
+        <element label="NPS (Net Promoter Score)" max_length="40" name="u_slx_nps" type="integer"/>
+        <element label="N°OS" max_length="32" name="u_slx_os" reference="x_hocsa_san_ficha_os" type="reference"/>
+        <element label="Controlador de Proyectos (PCO)" max_length="40" name="u_slx_pco" type="string"/>
+        <element label="Q10: Otros comentarios (soporte)" max_length="400" name="u_slx_q10_s" type="string"/>
+        <element choice="1" label="Q1: Valor de los servicios, diseños y soluciones (soporte)" max_length="40" name="u_slx_q1_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive="true" inactive_on_update="true" label="8" sequence="0" value="8"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="9" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="11" value="11"/>
+                <element inactive_on_update="false" label="0" language="es" sequence="100" value="0"/>
+                <element inactive_on_update="false" label="1" language="es" sequence="200" value="1"/>
+                <element inactive_on_update="false" label="2" language="es" sequence="300" value="2"/>
+                <element inactive_on_update="false" label="3" language="es" sequence="400" value="3"/>
+                <element inactive_on_update="false" label="4" language="es" sequence="500" value="4"/>
+                <element inactive_on_update="false" label="5" language="es" sequence="600" value="5"/>
+                <element inactive_on_update="false" label="6" language="es" sequence="700" value="6"/>
+                <element inactive_on_update="false" label="7" language="es" sequence="800" value="7"/>
+                <element inactive_on_update="false" label="8" language="es" sequence="900" value="8"/>
+                <element inactive_on_update="false" label="8" sequence="900" value="8"/>
+                <element inactive_on_update="false" label="10" language="es" sequence="1100" value="10"/>
+                <element inactive_on_update="false" label="NA" language="es" sequence="1200" value="11"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q3: Tiempo de respuesta" max_length="40" name="u_slx_q3_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q4: Capacidad técnica del personal en terreno" max_length="40" name="u_slx_q4_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q5: Capacidad técnica del personal remoto" max_length="40" name="u_slx_q5_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q6: Facilidad de hacer negocio" max_length="40" name="u_slx_q6_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q7: Mantener informado" max_length="40" name="u_slx_q7_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q8: Salud, Seguridad y Medio Ambiente" max_length="40" name="u_slx_q8_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q9: Recomendaría a Kairos/Hwll (soporte)" max_length="40" name="u_slx_q9_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <element choice="1" label="Sub área" max_length="40" name="u_slx_sub_area" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" choice_field="u_slx_q1_s" choice_table="x_hocsa_san_encuesta_de_soporte" label="Q2: Calidad de respuesta (soporte)" max_length="40" name="u_sl_q2_s" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="NA" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="8" sequence="11" value="8"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_slx_os"/>
+        </index>
+    </element>
+</database>

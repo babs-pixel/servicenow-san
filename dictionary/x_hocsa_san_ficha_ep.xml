@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Ficha EP" max_length="40" name="x_hocsa_san_ficha_ep" type="collection">
         <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Enviado a liberación de HES" language="es" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Enviado a liberación de HES" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Emitido a Codelco" language="es" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Emitido a Codelco" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Firmado por AC divisional" language="es" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Firmado por AC divisional" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Firmado por AC Codelco" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Firmado por AC Codelco" language="es" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Enviado a facturación" language="es" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="Enviado a facturación" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="Facturado" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="Facturado" language="es" sequence="6" value="6"/>
+            </choice>
         </element>
         <element label="Fecha de Aceptación de la RAE" max_length="40" name="u_slx_fecha_aceptacion_rae" type="glide_date"/>
         <element label="Fecha de cambio de estado" max_length="40" name="u_slx_fecha_cambio_estado" type="glide_date"/>
         <element label="Fecha Facturación" max_length="40" name="u_slx_fecha_facturacion" type="glide_date"/>
         <element label="Fecha Transferencia Bancaria" max_length="40" name="u_slx_fecha_transferencia_bancaria" type="glide_date"/>
+        <element label="N° HCO" max_length="32" name="u_slx_hco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
         <element label="N° Hoja de Entrada de Servicio" max_length="40" name="u_slx_hes" type="integer"/>
         <element label="Monto" max_length="40" name="u_slx_monto" type="integer"/>
         <element label="Nombre de Contrato" max_length="200" name="u_slx_nombre_contrato" type="string"/>
+        <element label="N° Entregable" max_length="32" name="u_slx_nro_entregable" reference="x_hocsa_san_entregable" type="reference"/>
         <element label="N° Factura Kairos/Codelco" max_length="40" name="u_slx_nro_factura_kairos_codelco" type="integer"/>
         <element label="N° Factura Kairos/Honeywell" max_length="40" name="u_slx_nro_factura_kairos_honeywell" type="integer"/>
         <element label="N° EP Honeywell/Kairos" max_length="40" name="u_slx_nro_honeywell_kairos" type="integer"/>
         <element label="N°  EP Kairos/Codelco" max_length="40" name="u_slx_nro_kairos_codelco" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Número" max_length="40" name="u_slx_numero" type="string"/>
         <element label="N° Contrato" max_length="32" name="u_slx_numero_contrato" type="integer"/>
         <element label="Número NEN" max_length="32" name="u_slx_numero_nen" type="integer"/>
+        <element label="Número OS" max_length="32" name="u_slx_numero_os" reference="x_hocsa_san_ficha_os" type="reference"/>
         <element label="N° PO" max_length="40" name="u_slx_po" type="integer"/>
         <element choice="1" label="Resumen de Entregables" max_length="40" name="u_slx_resumen_entregable" type="choice">
             <choice/>
@@ -25,6 +42,15 @@
         </index>
         <index name="index2">
             <element name="u_slx_numero_contrato"/>
+        </index>
+        <index name="index3">
+            <element name="u_slx_numero_os"/>
+        </index>
+        <index name="index4">
+            <element name="u_slx_hco"/>
+        </index>
+        <index name="index5">
+            <element name="u_slx_nro_entregable"/>
         </index>
     </element>
 </database>

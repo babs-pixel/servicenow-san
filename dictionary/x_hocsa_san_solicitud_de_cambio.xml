@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Solicitud de Cambio" max_length="40" name="x_hocsa_san_solicitud_de_cambio" type="collection">
-        <element label="Comentarios" max_length="40" name="u_slx_comentarios" type="string"/>
+        <element label="Comentarios" max_length="400" name="u_slx_comentarios" type="string"/>
         <element label="Correlativo" max_length="40" name="u_slx_correlativo" type="integer"/>
-        <element choice="1" label="División" max_length="40" name="u_slx_division" reference="core_company" type="reference">
-            <choice/>
+        <element choice="1" label="División" max_length="40" name="u_slx_division" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DCH" language="es" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="DCH" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="DET" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="DET" language="es" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="DAN" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="DAN" language="es" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="DSA" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="DSA" language="es" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="DCC" language="es" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="DCC" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="DMH" language="es" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="DMH" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="DRT" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="DRT" language="es" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="DGM" language="es" sequence="8" value="8"/>
+                <element inactive_on_update="false" label="DGM" sequence="8" value="8"/>
+                <element inactive_on_update="false" label="CCM" language="es" sequence="9" value="9"/>
+                <element inactive_on_update="false" label="CCM" sequence="9" value="9"/>
+                <element inactive_on_update="false" label="CSC" language="es" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="CSC" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="KAI" sequence="11" value="11"/>
+            </choice>
         </element>
         <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
             <choice>
@@ -15,10 +37,14 @@
                 <element inactive_on_update="false" label="Emitida Oficialmente" sequence="300" value="3"/>
                 <element inactive_on_update="false" label="Preparando nueva Revisión" language="es" sequence="400" value="4"/>
                 <element inactive_on_update="false" label="Preparando nueva Revisión" sequence="400" value="4"/>
-                <element inactive_on_update="false" label="Aprobada por Codelco" language="es" sequence="500" value="5"/>
-                <element inactive_on_update="false" label="Aprobada por Codelco" sequence="500" value="5"/>
-                <element inactive_on_update="false" label="Cancelada por Codelco" sequence="600" value="6"/>
-                <element inactive_on_update="false" label="Cancelada por Codelco" language="es" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Aprobada por planta" language="es" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Aprobada por planta" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Aprobada por Codelco" language="es" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Aprobada por Codelco" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Bookeada" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Bookeada" language="es" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Cancelada por Codelco" sequence="800" value="8"/>
+                <element inactive_on_update="false" label="Cancelada por Codelco" language="es" sequence="800" value="8"/>
             </choice>
         </element>
         <element label="Fecha Estado" max_length="40" name="u_slx_fecha_estado" type="glide_date"/>
@@ -38,7 +64,7 @@
         <element label="Número Siebel" max_length="40" name="u_slx_numero_siebel" type="integer"/>
         <element label="PCO" max_length="40" name="u_slx_pco" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
         <element label="Preparado por" max_length="40" name="u_slx_preparado" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
-        <element label="Requisitor" max_length="40" name="u_slx_requisitor" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
+        <element label="Requisitor SC" max_length="40" name="u_slx_requisitor" reference="x_hocsa_san_ficha_de_proyecto" type="reference"/>
         <element choice="1" label="Revisión " max_length="40" name="u_slx_revision" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Rev. 1" sequence="100" value="1"/>
@@ -49,7 +75,7 @@
                 <element inactive_on_update="false" label="Rev. 3" sequence="300" value="3"/>
             </choice>
         </element>
-        <element label="SC" max_length="40" name="u_slx_sc" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="SC" max_length="40" name="u_slx_sc" type="string"/>
         <element label="Valor Venta" max_length="40" name="u_slx_valor_venta" type="integer"/>
         <element label="Venta Final Proyecto" max_length="40" name="u_slx_venta_final_proyecto" type="integer"/>
     </element>

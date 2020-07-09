@@ -4,9 +4,7 @@
         <element label="% Avance financiero semanal" max_length="40" name="u_slx_avance_financiero_semanal" type="integer"/>
         <element label="% Avance planificado" max_length="40" name="u_slx_avance_planificado" type="integer"/>
         <element label="% Avance real" max_length="40" name="u_slx_avance_real" type="integer"/>
-        <element label="Comentario avance semanal" max_length="40" name="u_slx_comentario_avance_semanal" type="string"/>
-        <element label="Contrato" max_length="100" name="u_slx_contrato" type="string"/>
-        <element label="Costo acumulado" max_length="40" name="u_slx_costo_acumulado" type="integer"/>
+        <element label="Comentario avance semanal" max_length="400" name="u_slx_comentario_avance_semanal" type="string"/>
         <element label="Costo incurrido acumulado" max_length="40" name="u_slx_costo_incurrido_acumulado" type="integer"/>
         <element label="Costo incurrido mensual" max_length="40" name="u_slx_costo_incurrido_mensual" type="integer"/>
         <element label="%  Desviación avance real vs planificado" max_length="40" name="u_slx_desviacion_avance_real" type="integer"/>
@@ -16,11 +14,23 @@
         <element choice="1" label="Estado encuesta" max_length="40" name="u_slx_estado_encuesta" type="choice">
             <choice/>
         </element>
+        <element choice="1" label="Estado EP" max_length="40" name="u_slx_estado_ep" type="choice">
+            <choice/>
+        </element>
         <element choice="1" label="Estado de la NEN" max_length="40" name="u_slx_estado_nen" type="choice">
             <choice/>
         </element>
         <element choice="1" choice_field="u_slx_estado" choice_table="x_hocsa_san_solicitud_de_cambio" label="Estado SC" max_length="50" name="u_slx_estado_sc" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="En preparación" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="En revisión interna" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Emitida Oficialmente" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Preparando nueva Revisión" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Aprobada por planta" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Aprobada por Codelco" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="Bookeada" sequence="6" value="7"/>
+                <element inactive_on_update="false" label="Cancelada por Codelco" sequence="7" value="8"/>
+            </choice>
         </element>
         <element choice="1" label="Estado SC" max_length="40" name="u_slx_estado_sc_r" type="choice">
             <choice>
@@ -43,7 +53,7 @@
         <element label="Fecha de Inicio" max_length="40" name="u_slx_fecha_inicio" type="glide_date"/>
         <element label="Fecha planificada emisión" max_length="40" name="u_slx_fecha_planificada" type="glide_date"/>
         <element label="Fecha término" max_length="40" name="u_slx_fecha_termino" type="glide_date"/>
-        <element display="true" label="HCO" max_length="40" name="u_slx_hco" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="HCO" max_length="40" name="u_slx_hco" type="string"/>
         <element label="Jefe de Proyecto" max_length="40" name="u_slx_jefe_proyecto" type="string"/>
         <element label="Monto devengado" max_length="40" name="u_slx_monto_devengado" type="integer"/>
         <element label="Monto del entregable" max_length="40" name="u_slx_monto_entregable" type="integer"/>
@@ -55,12 +65,12 @@
         <element label="Nombre proyecto" max_length="40" name="u_slx_nombre_proyecto" type="string"/>
         <element label="Número de registro SAP" max_length="40" name="u_slx_nro_registro_sap" type="string"/>
         <element label="Número del acta de cierre" max_length="40" name="u_slx_numero_acta_cierre" type="integer"/>
+        <element label="N° Entregable" max_length="32" name="u_slx_numero_entregable" reference="x_hocsa_san_entregable" type="reference"/>
+        <element label="N° EP" max_length="32" name="u_slx_numero_ep" reference="x_hocsa_san_ficha_ep" type="reference"/>
         <element label="OS" max_length="32" name="u_slx_os" reference="x_hocsa_san_ficha_os" type="reference"/>
         <element label="PCO" max_length="40" name="u_slx_pco" type="string"/>
         <element label="Peso porcentual del entregable" max_length="40" name="u_slx_peso_porcentual_entregable" type="integer"/>
         <element label="PM" max_length="100" name="u_slx_pm" type="string"/>
-        <element label="Preparada por" max_length="100" name="u_slx_preparada_por" type="string"/>
-        <element label="Requisitor" max_length="100" name="u_slx_requisitor" type="string"/>
         <element label="SC" max_length="40" name="u_slx_sc" type="string"/>
         <element choice="1" label="Sub área" max_length="40" name="u_slx_sub_area" type="choice">
             <choice>
@@ -98,6 +108,12 @@
             </choice>
         </element>
         <index name="index">
+            <element name="u_slx_numero_ep"/>
+        </index>
+        <index name="index2">
+            <element name="u_slx_numero_entregable"/>
+        </index>
+        <index name="index3">
             <element name="u_slx_os"/>
         </index>
     </element>

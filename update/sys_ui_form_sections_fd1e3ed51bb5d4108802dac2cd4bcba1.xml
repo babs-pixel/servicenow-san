@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="fd1e3ed51bb5d4108802dac2cd4bcba1" sys_domain="global" table="x_hocsa_san_entregable" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-03 18:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c21e7ed51bb5d4108802dac2cd4bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hocsa_san_entregable" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">fd1e3ed51bb5d4108802dac2cd4bcba1</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">0813c509dbfd54103f3bbe4f29961930</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-03 18:02:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-03 18:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e1e7ed51bb5d4108802dac2cd4bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hocsa_san_entregable" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">fd1e3ed51bb5d4108802dac2cd4bcba1</sys_ui_form>
+            <sys_ui_section caption="Nota de Envío" display_value="Nota de Envío" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">f11e3ed51bb5d4108802dac2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-03 18:02:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-03 18:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c21e7ed51bb5d4108802dac2cd4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hocsa_san_entregable" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">fd1e3ed51bb5d4108802dac2cd4bcba1</sys_ui_form>
+            <sys_ui_section caption="Acta de Recepción de Servicios" display_value="Acta de Recepción de Servicios" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">7d1e3ed51bb5d4108802dac2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-03 18:02:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-03 18:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a1e7ed51bb5d4108802dac2cd4bcb59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hocsa_san_entregable" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">fd1e3ed51bb5d4108802dac2cd4bcba1</sys_ui_form>
+            <sys_ui_section caption="Fechas de entrega y firma" display_value="Fechas de entrega y firma" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">f51e3ed51bb5d4108802dac2cd4bcba0</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-03 18:02:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-03 18:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>461e7ed51bb5d4108802dac2cd4bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hocsa_san_entregable" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">fd1e3ed51bb5d4108802dac2cd4bcba1</sys_ui_form>
+            <sys_ui_section caption="PM" display_value="PM" name="x_hocsa_san_entregable" sys_domain="global" view="Default view">711e3ed51bb5d4108802dac2cd4bcba1</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-03 18:02:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_hocsa_san_entregable</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-03 18:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd1e3ed51bb5d4108802dac2cd4bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_hocsa_san_entregable</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="san" source="x_hocsa_san">b3538a711ba598108802dac2cd4bcb8e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="san">b3538a711ba598108802dac2cd4bcb8e</sys_scope>
+            <sys_update_name>sys_ui_form_sections_fd1e3ed51bb5d4108802dac2cd4bcba1</sys_update_name>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-03 18:02:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

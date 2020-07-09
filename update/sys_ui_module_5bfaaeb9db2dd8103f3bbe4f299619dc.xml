@@ -3,7 +3,7 @@
         <active>true</active>
         <application display_value="Gestión de OS">57faaeb9db2dd8103f3bbe4f299619da</application>
         <filter/>
-        <name>Ficha OSs</name>
+        <name>Fichas OS</name>
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
@@ -14,14 +14,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5bfaaeb9db2dd8103f3bbe4f299619dc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Ficha OSs</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Fichas OS</sys_name>
         <sys_package display_value="san" source="x_hocsa_san">b3538a711ba598108802dac2cd4bcb8e</sys_package>
         <sys_policy/>
         <sys_scope display_value="san">b3538a711ba598108802dac2cd4bcb8e</sys_scope>
         <sys_update_name>sys_ui_module_5bfaaeb9db2dd8103f3bbe4f299619dc</sys_update_name>
         <sys_updated_by>slx.bs</sys_updated_by>
-        <sys_updated_on>2020-06-22 19:40:13</sys_updated_on>
+        <sys_updated_on>2020-07-09 15:54:32</sys_updated_on>
         <table>x_hocsa_san_ficha_os</table>
         <uncancelable>false</uncancelable>
         <view_name/>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="u_slx_q8" table="x_hocsa_san_encuesta_de_proyecto" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_slx_q8</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NA</label>
+            <language>en</language>
+            <name>x_hocsa_san_encuesta_de_proyecto</name>
+            <sequence>12</sequence>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-06 21:35:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3adacf96db395c103f3bbe4f299619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-06 21:35:01</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_slx_q8</element>
+            <name>x_hocsa_san_encuesta_de_proyecto</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-06 21:29:57</sys_created_on>
+            <sys_id>135acf16db395c103f3bbe4f2996198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_slx_q8</sys_name>
+            <sys_package display_value="san" source="x_hocsa_san">b3538a711ba598108802dac2cd4bcb8e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="san">b3538a711ba598108802dac2cd4bcb8e</sys_scope>
+            <sys_update_name>sys_choice_x_hocsa_san_encuesta_de_proyecto_u_slx_q8</sys_update_name>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-06 21:29:57</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="san">b3538a711ba598108802dac2cd4bcb8e</application>
+        <file_path/>
+        <instance_id>b4276e2fdbe6278049eac59705961979</instance_id>
+        <instance_name>honeywellchiledev</instance_name>
+        <name>sys_choice_x_hocsa_san_encuesta_de_proyecto_u_slx_q8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="u_slx_q8" table="x_hocsa_san_encuesta_de_proyecto" version="3"><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_slx_q8</element><hint/><inactive>false</inactive><label>NA</label><language>en</language><name>x_hocsa_san_encuesta_de_proyecto</name><sequence>12</sequence><sys_created_by>slx.bs</sys_created_by><sys_created_on>2020-07-06 21:35:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3adacf96db395c103f3bbe4f299619dc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.bs</sys_updated_by><sys_updated_on>2020-07-06 21:35:01</sys_updated_on><value>11</value></sys_choice><sys_choice_set action="INSERT_OR_UPDATE"><element>u_slx_q8</element><name>x_hocsa_san_encuesta_de_proyecto</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>slx.bs</sys_created_by><sys_created_on>2020-07-06 21:29:57</sys_created_on><sys_id>135acf16db395c103f3bbe4f2996198f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_slx_q8</sys_name><sys_package display_value="san" source="x_hocsa_san">b3538a711ba598108802dac2cd4bcb8e</sys_package><sys_policy/><sys_scope display_value="san">b3538a711ba598108802dac2cd4bcb8e</sys_scope><sys_update_name>sys_choice_x_hocsa_san_encuesta_de_proyecto_u_slx_q8</sys_update_name><sys_updated_by>slx.bs</sys_updated_by><sys_updated_on>2020-07-06 21:29:57</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>-976338894</payload_hash>
+        <record_name>x_hocsa_san_encuesta_de_proyecto.u_slx_q8</record_name>
+        <reverted_from/>
+        <source>f7538a711ba598108802dac2cd4bcb90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:06</sys_created_on>
+        <sys_id>575291cb1b3ddc108802dac2cd4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17330291a770000001</sys_recorded_at>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:06</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>1f5291cbdc3ddc1061b1a3fe24e07466</update_guid>
+        <update_guid_history>1f5291cbdc3ddc1061b1a3fe24e07466:-976338894,5f5291cb2b3ddc10dd0bfe46e670e263:-259212709,9f5291cbc03ddc101516524f244ac160:-1002966183,df5291cb4b3ddc1048db885cc869085d:-1719101322,135291cbce3ddc10ac457a3f78d9bd5b:1951349928,535291cb2d3ddc10d30c7724c9ac5458:1918398449,935291cb8c3ddc1083eb0d66dbdc6e55:659617456,d35291cb793ddc10edd5deddf7ddf752:-1948987916,175291cbed3ddc1029a3ee4557fe0e4f:1705562164,575291cb183ddc10e77c850a16d4274c:-122748487,975291cbff3ddc10f0ba19342442da49:202134783,d75291cbe83ddc1057a2668885270a46:-1998235648,1b5291cb9a3ddc10625a8862999bd643:-1156562105,5b5291cb693ddc10a50290b75441cc40:42674185,9b5291cb133ddc10e82e1ef4879b583d:360006348,db5291cb6f3ddc1030f1d633ff7a9f3a:884943124,1f5291cbe93ddc10e31bcef5ccd09937:1594819416,5f5291cbd13ddc10888e2033dba1b634:-1293187103,9f5291cb783ddc10d63673535ad3a831:-550923610,cf5291cb1b3ddc10f3bf871b4c254a2e:1653253744,035291cba43ddc1029fb39cdf1b0c72c:1332042683,435291cb383ddc10fb10cbc8d5cc7629:1162293633,835291cb903ddc104607c01812972d26:1310584904,d0ab8f1a68395c108dabcdd65d11f977:163640724,af8b0f1a6b395c10e5336c6b175f0420:-822139621,e98b4fd6e0395c1053778111a8bb544b:414547314,3a7b831ab5395c10ffddba2264a746cb:-411302464,e14b071a08395c109483b7b3790c9853:916001017,513b431a51395c105449a54c1cdacfe7:-1521241563,903b071acc395c1057fe52fb2cf5954f:-258427027,ca2b4bd6db395c10948d14957b47ec8e:-2034416982,552b431a56395c100af224819ee1e1e3:-1856330586,4b1b431af6395c101cf9778faf6387df:-1567632281,5e1b4fd66b395c101a8611b6a765a231:1398853538,4c1b0fd658395c107a87bbbc1078db0e:-1646158622,26fa4f9695395c1094caa0b37218e6a8:402521057,eeea4fd6aa395c10778a44312f2a2028:1066662247,69ea4bd6d3395c1047dee7a623001ebc:501412443,2fba83d6e7395c10d3c42549b3ba028f:-2035146860,94bac3d6d6395c108cadfaa8b066d113:1858566605,45aa0b162a395c10678456d9d8b618ae:-1757103797,b69a03d6e4395c10f6e6f298457b23fd:923062531,d09a4f960a395c10656faff01e1d4af3:-186017920,438a83d61a395c10b0f88fe52de5f78b:636144247,d58a4f9671395c10ce5fddce95462fef:1210069107,fb7a4f96a5395c109e74ae29979640a1:2004580137,987a03d6fe395c10742c6e50e68f8bf9:-1479387868,e26acf965e395c10d40b51ca5ef044d3:-1767162535,d46acf9616395c103008b895b9d772cf:76405715,d75acf16eb395c10c8b63c4522207e90:-1337138297</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>135acf16db395c103f3bbe4f2996198f</sys_id>
+        <sys_metadata>135acf16db395c103f3bbe4f2996198f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_slx_q8</sys_name>
+        <sys_package display_value="san" source="x_hocsa_san">b3538a711ba598108802dac2cd4bcb8e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="san">b3538a711ba598108802dac2cd4bcb8e</sys_scope>
+        <sys_scope_delete display_value="">0009110227e24aea800001a63160d384</sys_scope_delete>
+        <sys_update_name>sys_choice_x_hocsa_san_encuesta_de_proyecto_u_slx_q8</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_hocsa_san_encuesta_de_proyecto_u_slx_q8">575291cb1b3ddc108802dac2cd4bcb67</sys_update_version>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

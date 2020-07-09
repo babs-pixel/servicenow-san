@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Iniciativa" max_length="40" name="x_hocsa_san_iniciativa" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Número" max_length="40" name="slx_u_numero" type="string"/>
         <element label="Año" max_length="40" name="u_slx_ano" type="integer"/>
         <element label="Cartera" max_length="32" name="u_slx_cartera" reference="x_hocsa_san_cartera" type="reference"/>
-        <element label="Descripción" max_length="200" name="u_slx_descripcion" type="string"/>
+        <element label="Descripción" max_length="4000" name="u_slx_descripcion" type="string"/>
         <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Pendiente" language="es" sequence="100" value="1"/>

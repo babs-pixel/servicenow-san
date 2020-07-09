@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Cartera" max_length="40" name="x_hocsa_san_cartera" type="collection">
         <element label="Cliente" max_length="40" name="u_slx_cliente" reference="core_company" type="reference"/>
-        <element display="true" label="Descripción" max_length="200" name="u_slx_descripcion" type="string"/>
+        <element label="Descripción" max_length="4000" name="u_slx_descripcion" type="string"/>
         <element choice="1" label="Estado" max_length="40" name="u_slx_estado" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Abierta" language="es" sequence="100" value="1"/>
@@ -12,5 +12,6 @@
         </element>
         <element label="Fecha cambio de estado" max_length="40" name="u_slx_fecha_cambio_estado" type="glide_date"/>
         <element label="Monto Presupuestado" max_length="40" name="u_slx_monto_presupuestado" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Número " max_length="40" name="u_slx_numero" type="string"/>
     </element>
 </database>

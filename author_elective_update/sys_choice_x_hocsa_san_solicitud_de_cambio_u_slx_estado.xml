@@ -157,19 +157,57 @@
             <element>u_slx_estado</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Aprobada por Codelco</label>
+            <label>Aprobada por planta</label>
             <language>es</language>
             <name>x_hocsa_san_solicitud_de_cambio</name>
             <sequence>500</sequence>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-07 15:47:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7a58762dbbd9c103f3bbe4f2996192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-07 15:47:58</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_slx_estado</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aprobada por planta</label>
+            <language>en</language>
+            <name>x_hocsa_san_solicitud_de_cambio</name>
+            <sequence>500</sequence>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-07 15:47:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e17583eedb7d9c103f3bbe4f29961998</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-07 15:47:51</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_slx_estado</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aprobada por Codelco</label>
+            <language>es</language>
+            <name>x_hocsa_san_solicitud_de_cambio</name>
+            <sequence>600</sequence>
             <sys_created_by>slx.bs</sys_created_by>
             <sys_created_on>2020-06-22 21:28:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>43a34fbddbadd8103f3bbe4f29961933</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>slx.bs</sys_updated_by>
-            <sys_updated_on>2020-06-22 21:28:04</sys_updated_on>
-            <value>5</value>
+            <sys_updated_on>2020-07-07 15:57:36</sys_updated_on>
+            <value>6</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -179,16 +217,54 @@
             <label>Aprobada por Codelco</label>
             <language>en</language>
             <name>x_hocsa_san_solicitud_de_cambio</name>
-            <sequence>500</sequence>
+            <sequence>600</sequence>
             <sys_created_by>slx.bs</sys_created_by>
             <sys_created_on>2020-06-22 21:28:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>45b38b7ddbadd8103f3bbe4f2996199d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-07 15:57:31</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_slx_estado</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bookeada</label>
+            <language>en</language>
+            <name>x_hocsa_san_solicitud_de_cambio</name>
+            <sequence>700</sequence>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-07 15:48:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e758faedb7d9c103f3bbe4f29961993</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>slx.bs</sys_updated_by>
-            <sys_updated_on>2020-06-22 21:28:12</sys_updated_on>
-            <value>5</value>
+            <sys_updated_on>2020-07-07 15:48:21</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_slx_estado</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bookeada</label>
+            <language>es</language>
+            <name>x_hocsa_san_solicitud_de_cambio</name>
+            <sequence>700</sequence>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2020-07-07 15:48:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6c54762dbbd9c103f3bbe4f299619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2020-07-07 15:48:28</sys_updated_on>
+            <value>7</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -198,16 +274,16 @@
             <label>Cancelada por Codelco</label>
             <language>en</language>
             <name>x_hocsa_san_solicitud_de_cambio</name>
-            <sequence>600</sequence>
+            <sequence>800</sequence>
             <sys_created_by>slx.bs</sys_created_by>
             <sys_created_on>2020-06-22 21:28:34</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2ac307fddbadd8103f3bbe4f29961917</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>slx.bs</sys_updated_by>
-            <sys_updated_on>2020-06-22 21:28:34</sys_updated_on>
-            <value>6</value>
+            <sys_updated_on>2020-07-07 15:57:00</sys_updated_on>
+            <value>8</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -217,16 +293,16 @@
             <label>Cancelada por Codelco</label>
             <language>es</language>
             <name>x_hocsa_san_solicitud_de_cambio</name>
-            <sequence>600</sequence>
+            <sequence>800</sequence>
             <sys_created_by>slx.bs</sys_created_by>
             <sys_created_on>2020-06-22 21:28:43</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ecd38b7ddbadd8103f3bbe4f299619a0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>slx.bs</sys_updated_by>
-            <sys_updated_on>2020-06-22 21:28:43</sys_updated_on>
-            <value>6</value>
+            <sys_updated_on>2020-07-07 15:56:54</sys_updated_on>
+            <value>8</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_slx_estado</element>
